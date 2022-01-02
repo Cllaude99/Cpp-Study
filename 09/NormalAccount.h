@@ -2,6 +2,7 @@
 #define _NORMAL_ACCOUNT_H__
 
 #include "Account.h"
+#include "String.h"
 
 class NormalAccount : public Account
 {
@@ -9,7 +10,7 @@ private:
     int interRate;
 
 public:
-    NormalAccount(int ID, int money, const char *name, int rate)
+    NormalAccount(int ID, int money, String name, int rate)
         : Account(ID, money, name), interRate(rate)
     {
     }
